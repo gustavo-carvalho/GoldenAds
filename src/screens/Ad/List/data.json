@@ -1,0 +1,68 @@
+[
+  {
+    "id": 11,
+    "title": "nova promo",
+    "price": "22,00",
+    "picture": "https://scontent.fsdu8-1.fna.fbcdn.net/v/t1.0-9/17903604_1419578201450481_1097421198124171511_n.jpg?oh=c3460a3f9259e596c1a9f0ef260211cd\u0026oe=59F98113",
+    "description": "muito legal",
+    "created_at": "2017-07-16T17:03:19.011Z",
+    "updated_at": "2017-07-16T17:03:19.011Z",
+    "admin_id": 2,
+    "amount": null
+  },
+  {
+    "id": 10,
+    "title": "Titulo 10",
+    "price": "10,00",
+    "picture": "https://assets.lojaskd.com.br/73100/73102/73102_29_amp_290.jpg",
+    "description": "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
+    "created_at": "2017-04-22T18:19:09.622Z",
+    "updated_at": "2017-07-16T17:04:42.619Z",
+    "admin_id": 2,
+    "amount": 10
+  },
+  {
+    "id": 9,
+    "title": "Titulo 9",
+    "price": "9,00",
+    "picture": "https://assets.lojaskd.com.br/73100/73102/73102_29_amp_290.jpg",
+    "description": "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
+    "created_at": "2017-04-22T18:19:09.614Z",
+    "updated_at": "2017-04-22T18:19:09.614Z",
+    "admin_id": 2,
+    "amount": 9
+  },
+  {
+    "id": 8,
+    "title": "Titulo 8",
+    "price": "8,00",
+    "picture": "https://s-media-cache-ak0.pinimg.com/736x/1a/c6/c0/1ac6c05f192430cc49503abffabd1b23.jpg",
+    "description": "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
+    "created_at": "2017-04-22T18:19:09.606Z",
+    "updated_at": "2017-05-15T14:47:02.663Z",
+    "admin_id": 2,
+    "amount": 7
+  },
+  {
+    "id": 5,
+    "title": "Titulo 5",
+    "price": "5,00",
+    "picture": "https://assets.lojaskd.com.br/73100/73102/73102_29_amp_290.jpg",
+    "description": "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
+    "created_at": "2017-04-22T18:19:09.585Z",
+    "updated_at": "2017-05-06T18:00:10.213Z",
+    "admin_id": 2,
+    "amount": 5
+  },
+  {
+    "id": 3,
+    "title": "Titulo 3",
+    "price": "3,00",
+    "picture": "https://i.pinimg.com/736x/1a/c6/c0/1ac6c05f192430cc49503abffabd1b23.jpg",
+    "description": "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
+    "created_at": "2017-04-22T18:19:09.567Z",
+    "updated_at": "2017-04-22T18:19:09.567Z",
+    "admin_id": 2,
+    "amount": 3
+  }
+]
