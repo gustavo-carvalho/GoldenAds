@@ -8,15 +8,11 @@ function* fetchAds() {
   try {
     const ads = yield AdApi.fetchAds()
     const parsedAds: IAd[] = ads.map(o => ({
-      id: o.id,
-      title: o.title,
-      price: o.price,
+      ...o,
       imgUri: o.picture,
-      description: o.description,
       createdAt: new Date(o.created_at),
       updatedAt: new Date(o.updated_at),
       adminId: o.admin_id,
-      amount: o.amount,
     }))
 
     yield put(actions.fetchAdsSuccess(parsedAds))
