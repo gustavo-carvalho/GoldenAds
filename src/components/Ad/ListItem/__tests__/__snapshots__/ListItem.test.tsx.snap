@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correctly 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "borderColor": "#D3D3D3",
+        "borderRadius": 6,
+        "borderWidth": 0.5,
+        "flex": 1,
+        "marginVertical": 16,
+        "paddingBottom": 16,
+      }
+    }
+  >
+    <Image
+      onError={[Function]}
+      source={
+        Object {
+          "testUri": "../../../src/res/images/placeholder.png",
+        }
+      }
+      style={
+        Object {
+          "borderTopLeftRadius": 6,
+          "borderTopRightRadius": 6,
+          "height": 150,
+          "resizeMode": "cover",
+          "width": "100%",
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#71CACF",
+            "fontSize": 16,
+            "paddingTop": 16,
+          }
+        }
+      >
+        awesome test
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#c3c3c3",
+            "fontSize": 12,
+          }
+        }
+      >
+        30 november
+      </Text>
+    </View>
+  </View>
+</View>
+`;
