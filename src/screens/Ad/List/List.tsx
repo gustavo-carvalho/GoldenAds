@@ -1,37 +1,24 @@
 import * as React from 'react'
-import { View, Text, FlatList } from 'react-native'
+import { View, FlatList } from 'react-native'
 
 import { AdListItem } from 'src/components/Ad/ListItem'
-import R from 'src/res'
-import fakeData from './data.json'
+import { IAd } from 'src/redux/ad'
 import styles from './styles'
 import moment from 'moment'
 
-export interface IDataItem {
-  id: string
-  title: string
-  price: string
-  imgUri: string
-  description: string
-  createdAt: Date
-  updatedAt: Date
-  adminId: string
-  amount: number
-}
-
 export interface IProps {
-  data: IDataItem[]
+  data: IAd[]
 }
 
 function AdListScreen({ data }: IProps) {
-  const _renderItem = (item) => {
-    const date = moment(item.date)
-    
+  const _renderItem = (item: IAd) => {
+    const date = moment(item.createdAt)
+
     return (
       <AdListItem
         date={date.format('DD MMM, YYYY')}
         title={item.title}
-        imgSource={{ uri: item.picture }}
+        imgSource={{ uri: item.imgUri }}
       />
     )
   }
@@ -39,8 +26,8 @@ function AdListScreen({ data }: IProps) {
   return (
     <View style={styles.container}>
       <FlatList
-        data={fakeData}
-        renderItem={({ item, index }) => _renderItem(item)}
+        data={data}
+        renderItem={({ item }) => _renderItem(item)}
         keyExtractor={({ id }) => id.toString()}
       />
     </View>

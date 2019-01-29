@@ -14,9 +14,9 @@ export class AppScreen extends React.Component {
 
   render() {
     return (
-      // <Provider store={store}>
-      <Navigator />
-      // </Provider>
+      <Provider store={store}>
+        <Navigator />
+      </Provider>
     )
   }
 }

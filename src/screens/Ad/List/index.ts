@@ -1,1 +1,1 @@
-export { default as AdListScreen } from './List'
+export { default as AdListScreen } from './ListContainer'
