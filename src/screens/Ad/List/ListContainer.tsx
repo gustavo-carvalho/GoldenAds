@@ -2,7 +2,7 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 import { NavigationScreenProp, NavigationState } from 'react-navigation'
 
-import { actions, IAd } from 'src/redux/ad'
+import { actions, IAd, selectors } from 'src/redux/ad'
 import { IApplicationState } from 'src/redux/root'
 import AdListScreen from './List'
 
@@ -41,7 +41,7 @@ class ListContainer extends React.Component<Ipros> {
 }
 
 const mapStateToProps = (state: IApplicationState) => ({
-  ads: state.ad.ads,
+  ads: selectors.getAds(state),
 })
 
 export default connect(
