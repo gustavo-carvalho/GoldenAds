@@ -8,14 +8,16 @@ import moment from 'moment'
 
 export interface IProps {
   data: IAd[]
+  onAdPress: (ad: IAd) => void
 }
 
-function AdListScreen({ data }: IProps) {
+function AdListScreen({ data, onAdPress }: IProps) {
   const _renderItem = (item: IAd) => {
     const date = moment(item.createdAt)
 
     return (
       <AdListItem
+        onPress={() => onAdPress(item)}
         date={date.format('DD MMM, YYYY')}
         title={item.title}
         imgSource={{ uri: item.imgUri }}

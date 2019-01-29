@@ -7,6 +7,7 @@ import {
 } from 'react-navigation'
 
 import { AdListScreen } from 'src/screens/Ad/List'
+import { ViewAdScreen } from 'src/screens/Ad/View'
 import R from 'src/res'
 
 const commonStackNavOptions: StackNavigatorConfig = {
@@ -30,6 +31,7 @@ const commonNavOptions: NavigationScreenConfig<NavigationStackScreenOptions> = {
 const AppNavigator = createStackNavigator(
   {
     AdList: AdListScreen,
+    ViewAd: ViewAdScreen,
   },
   {
     ...commonStackNavOptions,
