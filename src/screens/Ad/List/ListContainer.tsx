@@ -2,12 +2,14 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 import { NavigationScreenProp, NavigationState } from 'react-navigation'
 
+import WithLoader from 'src/common/WithLoader'
 import { actions, IAd, selectors } from 'src/redux/ad'
 import { IApplicationState } from 'src/redux/root'
 import AdListScreen from './List'
 
 interface IPropsFromState {
   ads: IAd[]
+  loading: boolean
 }
 
 interface IPropsFromDispatch {
@@ -20,6 +22,8 @@ interface INavProps {
 }
 
 type Ipros = IPropsFromState & IPropsFromDispatch & INavProps
+
+const AdListScreenWithLoader = WithLoader(AdListScreen)
 
 class ListContainer extends React.Component<Ipros> {
   static navigationOptions = {
@@ -36,12 +40,19 @@ class ListContainer extends React.Component<Ipros> {
   }
 
   render() {
-    return <AdListScreen onAdPress={this._onAdPress} data={this.props.ads} />
+    return (
+      <AdListScreenWithLoader
+        loading={this.props.loading}
+        onAdPress={this._onAdPress}
+        data={this.props.ads}
+      />
+    )
   }
 }
 
 const mapStateToProps = (state: IApplicationState) => ({
   ads: selectors.getAds(state),
+  loading: state.ad.fetchAdsRequested,
 })
 
 export default connect(

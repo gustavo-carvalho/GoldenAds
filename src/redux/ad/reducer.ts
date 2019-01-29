@@ -18,10 +18,14 @@ const reducer = (
       return { ...state, fetchAdsRequested: true }
 
     case types.FETCH_ADS_SUCCESS:
-      return { ...state, ads: action.payload }
+      return { ...state, ads: action.payload, fetchAdsRequested: false }
 
     case types.FETCH_ADS_FAIL:
-      return { ...state, fetchAdsFail: action.payload }
+      return {
+        ...state,
+        fetchAdsFail: action.payload,
+        fetchAdsRequested: false,
+      }
 
     case types.SELECT_AD:
       return { ...state, selectedAd: action.payload }
