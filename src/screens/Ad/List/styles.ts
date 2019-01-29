@@ -9,7 +9,7 @@ interface IStyles {
 export default StyleSheet.create<IStyles>({
   container: {
     flex: 1,
-    padding: R.dimensions.SPACING,
+    paddingHorizontal: R.dimensions.SPACING,
     backgroundColor: R.colors.SCREEN_BG,
   },
 })
