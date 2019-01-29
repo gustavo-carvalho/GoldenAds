@@ -12,6 +12,7 @@ interface IPropsFromState {
 
 interface IPropsFromDispatch {
   fetchAds: typeof actions.fetchAds
+  selectAd: typeof actions.selectAd
 }
 
 interface INavProps {
@@ -22,15 +23,20 @@ type Ipros = IPropsFromState & IPropsFromDispatch & INavProps
 
 class ListContainer extends React.Component<Ipros> {
   static navigationOptions = {
-    title: 'Advertisements',
+    title: 'Anúncios',
   }
 
   componentDidMount() {
     this.props.fetchAds()
   }
 
+  _onAdPress = (ad: IAd) => {
+    this.props.selectAd(ad)
+    this.props.navigation.navigate('ViewAd')
+  }
+
   render() {
-    return <AdListScreen data={this.props.ads} />
+    return <AdListScreen onAdPress={this._onAdPress} data={this.props.ads} />
   }
 }
 
