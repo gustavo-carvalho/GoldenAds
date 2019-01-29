@@ -3,5 +3,10 @@
 exports[`ImageWithPlaceholder renders correctly 1`] = `
 <Image
   onError={[Function]}
+  source={
+    Object {
+      "uri": "https://facebook.github.io/react-native/img/header_logo.png",
+    }
+  }
 />
 `;
