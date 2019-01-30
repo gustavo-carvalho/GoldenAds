@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import store from 'src/redux/store'
 import Navigator from '../Navigator'
 
-export class AppScreen extends React.Component {
+export class MainAppScreen extends React.Component {
   constructor(props: any) {
     super(props)
 
